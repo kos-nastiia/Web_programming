@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>PURPLE</title>
+            
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+            <!--<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>-->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="../dist/css/styles.min.css">
+            <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
+    </head>
+
+    <body>
+        <!--*******************************************************HEADER*******************************************************-->
+            <div class="row">
+                <div class="col-12 d-flex align-items-stretch" id="header">
+                    <div class="col-2 colum_2 d-flex my-2 justify-content-center">
+                        <span class="head_icon mt-2">
+                            <ion-icon name="layers-outline"></ion-icon>
+                        </span>    
+                        <h1 class="title-name ms-1"><b>Purple</b></h1>
+                    </div>
+                    <div class="col-10 colum_10 d-flex justify-content-between mt-3">
+                        <div>
+                            <form>
+                                <button class="search">
+                                    <ion-icon name="search-outline"></ion-icon>
+                                </button>
+                                <input class="search" type="text" placeholder="Search projects...">
+                            </form>
+                        </div>
+                        <div class="d-flex">
+                            <div>
+                                <image class="photo-in-table me-3" src="../src/img/Sergiy Zhadan.jpg">
+                            </div>
+                            <p class="name mt-1">David Grey. H</з>
+                            <a href="#">
+                                <span class="icon_photo">
+                                    <ion-icon class="text-muted" name="chevron-down-outline"></ion-icon>
+                                </span>   
+                            </a>
+                            <div class="top_icons">
+                                <ul class="d-flex">
+                                    <li class="list">
+                                        <a href="#">
+                                            <span class="icon mx-4">
+                                                <ion-icon class="text-muted" name="scan-outline"></ion-icon>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="#">
+                                            <span class="icon  mx-4">
+                                                <ion-icon class="text-muted"  name="mail-outline"></ion-icon>
+                                                <span class="mail"></span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="#">
+                                            <span class="icon mx-4">
+                                                <ion-icon class="text-muted"  name="notifications-outline"></ion-icon>
+                                                <span class="notifications"></span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="#">
+                                            <span class="icon mx-4">
+                                                <ion-icon class="text-muted" name="power-outline"></ion-icon>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="#">
+                                            <span class="icon mx-4">
+                                                <ion-icon class="text-muted" name="list-outline"></ion-icon>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--****************************************************SIDEBAR****************************************************-->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-2 colum_2" id="sidebar">
+                        <!--Header of sidebar-->
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <div id="second_profile_container">
+                                    <image style="width: 50px; height: 50px; border-radius: 100%;" src="../src/img/Sergiy Zhadan.jpg">
+                                </div>
+                                <h2 class="second_name">David Grey. H</h2>
+                                <p class="project_manager">Project Manager</p>
+                            </div>
+                            <div>
+                                <span class="check">
+                                    <image id="official_acc" src="../dist/images/official_acc.jpg"></image>
+                                    <!--<ion-icon name="checkbox"></ion-icon>-->
+                                </span>
+                            </div>
+                        </div>
+                        <!--******************************************Menu of sidebar******************************************-->
+                        <ul class="nav">
+                            <li class="align-items-center nav-item li_conteiner">
+                                <a href="#" class="left-menu-link nav-link">
+                                    <span class="left-menu-text" id="open-menu">Dashboard</span>
+                                    <ion-icon class="arrow-icon me-0" name="home-outline"></ion-icon>
+                                </a>
+                                
+                            </li>
+                            <li class="align-items-center nav-item li_conteiner">
+                                <a href="#" class="left-menu-link nav-link"> 
+                                    <span class="left-menu-text">Ul Elements</span>
+                                    <ion-icon class="arrow-icon me-0" name="locate-outline"></ion-icon>
+                                </a>
+                            </li>
+                            <li class="align-items-center nav-item li_conteiner">
+                                <a href="#" class="left-menu-link">
+                                    <span class="left-menu-text">Icons</span>
+                                    <ion-icon class="arrow-icon me-0" name="person-circle-outline"></ion-icon>
+                                </a>
+                            </li>
+                            <li class="align-items-center nav-item li_conteiner">
+                                <a href="#" class="left-menu-link">
+                                    <span class="left-menu-text">Forms</span>
+                                    <ion-icon class="arrow-icon me-0" name="list-outline"></ion-icon>
+                                </a>
+                            </li>
+                            <li class="align-items-center nav-item li_conteiner">
+                                <a href="#" class="left-menu-link">
+                                    <span class="left-menu-text">Charts</span>
+                                    <ion-icon class="arrow-icon me-0" name="stats-chart-outline"></ion-icon>
+                                </a>
+                            </li>
+                            <li class="align-items-center nav-item li_conteiner">
+                                <a href="#" class="left-menu-link">
+                                    <span class="left-menu-text">Tables</span>
+                                    <ion-icon class="arrow-icon me-0" name="apps-outline"></ion-icon>
+                                </a>
+                            </li>
+                            <li class="align-items-center nav-item li_conteiner">
+                                <a href="#" class="left-menu-link">
+                                    <span class="left-menu-text">Sample Pages</span>
+                                    <div class="arrow-icon me-0">
+                                        <ion-icon name="chevron-back-outline"></ion-icon>
+                                        <ion-icon name="add-circle-outline"></ion-icon>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="pro_head d-flex align-items-center nav-item">Projects</div>
+                        <hr style="height:2px; width:100%; border-width:0; color:grey; background-color:grey">
+                        <div class="d-flex align-items-center nav-item">
+                            <button type="button"  class="add_project">+ Add a Project</button>
+                        </div>
+                        <hr style="height:2px; width:100%; border-width:0; color:grey; background-color:grey">
+                        <div class="d-flex align-items-center nav-item category">Categories</div>
+                        <div class="form-check">
+                            <input class="form-check-input radio_but_1" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label " for="flexRadioDefault1">Frends</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input radio_but_2" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">Pro</label>
+                        </div>
+                    </div>
+                    <!--**************************************************CONTENT**************************************************-->
+                    <div class="col-10 colum_10" id="content">
+                        <!--*****************************************Dashboard & Overview*****************************************-->
+                        <div class="row">
+                            <div class="d-flex justify-content-between col-11 grid-margin streched-card mx-3 my-3" style="width:97%;">
+                                <div id="house_with_dashcoard" class="d-inline">
+                                    <div class="mt-2">
+                                        <ion-icon id="little_house" class="btn btn-primary rounded-2" name="home-outline"></ion-icon>
+                                        <b>Dashboard</b>
+                                    </div>
+                                </div>
+                                <div class="d-flex text-muted mt-2" id="overview">
+                                    <p>Overview</p>
+                                    <ion-icon class="mt-1" style="font-size:18px" name="information-circle-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <!--************************************************3 blocks************************************************-->
+                        <div class="row">
+                            <div class="d-flex justify-content-between col-11 grid-margin streched-card mx-3"  style="width:97%;">
+                                <div class="strech-card">
+                                    <div class="card bg-gradient-danger card-img-holder text-white">
+                                        <div class="card-body">
+                                            <img class="card-img-absolute">
+                                            <h4 class="font-weight-normal mb-3 d-flex justify-content-between">
+                                                Weekly Sales
+                                                <ion-icon name="trending-up-outline"></ion-icon>
+                                            </h4>
+                                            <h2 class="mb-5">$15, 0000</h2>
+                                            <h6 class="card-text">Increased by 60%</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" strech-card">
+                                    <div class="card bg-gradient-info card-img-holder text-white">
+                                        <div class="card-body">
+                                            <img class="card-img-absolute">
+                                            <h4 class="font-weight-normal mb-3 d-flex justify-content-between">
+                                                Weekly Orders
+                                                <ion-icon name="bookmark-outline"></ion-icon>
+                                            </h4>
+                                            <h2 class="mb-5">45, 6334</h2>
+                                            <h6 class="card-text">Decreased by 10%</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="strech-card">
+                                    <div class="card bg-gradient-success card-img-holder text-white">
+                                        <div class="card-body">
+                                            <img class="card-img-absolute">
+                                            <h4 class="font-weight-normal mb-3 d-flex justify-content-between">
+                                                Visitors Online
+                                                <ion-icon name="diamond-outline"></ion-iconion-icon>
+                                            </h4>
+                                            <h2 class="mb-5">95, 5741</h2>
+                                            <h6 class="card-text">Increased by 5%</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--*****************************Visit & Sales Statistics with Traffic Sources*****************************-->
+                        <div class="row">
+                            <div class="d-flex justify-content-between col-11 grid-margin streched-card mx-3" style="width:97%;">
+                                <div class="col-7 stretch-card" style="width:59%;">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="clearfix">
+                                                <h4 class="card-title float-left">Visit & Sales Statistics</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-5 stretch-card" style="width:39%;">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="clearfix">
+                                                <h4 class="card-title float-left">Traffic Source</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--********************************************Recent Tickets********************************************-->
+                        <div class="row">
+                            <div class="col-11 grid-margin streched-card mx-3" style="width:97%;">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Recent Tickets</h4>
+                                        <table class="table align-middle" style="font-family: ubuntu-medium, sans-serif; font-size: small;">
+                                            <thead>
+                                                <tr>
+                                                    <th><b>Assignee</b></th>
+                                                    <th><b>Subject</b></th>
+                                                    <th><b>Status</b></th>
+                                                    <th><b>Last Update</b></th>
+                                                    <th><b>Tracking ID</b></th>
+                                                </tr>
+                                            </thead> 
+                                            <tbody>
+                                                <tr>
+                                                    <td><image class="photo-in-table me-3" src="../src/img/Dan Brown.jpg"></image>David Grey</td>
+                                                    <td>Funds is not received</td>
+                                                    <td><label class="badge bg-gradient-success">DONE</label></td>
+                                                    <td>26 jun 2017</td>
+                                                    <td>WD-12345</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><image class="photo-in-table me-3" src="../src/img/Julia Sanina.png"></image>Stella Johnson</td>
+                                                    <td>assign a new task Design Purpleadmin</td>
+                                                    <td><label class="badge bg-gradient-warning">PROGRESS</label></td>
+                                                    <td>27 jun 2017</td>
+                                                    <td>WD-12346</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><image class="photo-in-table me-3" src="../src/img/Tina Karol.jpg"></image>Marina Michal</td>
+                                                    <td>Website down for one week</td>
+                                                    <td><label class="badge bg-gradient-info">ON HOLD</label></td>
+                                                    <td>28 jun 2017</td>
+                                                    <td>WD-12347</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><image class="photo-in-table me-3" src="../src/img/Neil Gaiman.jpg"></image>John Doe</td>
+                                                    <td>Understanding dashboard problems</td>
+                                                    <td><label class="badge bg-gradient-danger">REJECTED</label></td>
+                                                    <td>29 jun 2017</td>
+                                                    <td>WD-12347</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!---*******************************************Recent Updates*******************************************-->
+                        <div class="row">
+                            <div class="col-11 grid-margin streched-card mx-3" style="width:97%;">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title mb-3 mx-3">Recent Updates</h4>
+                                        <div class="card-description d-flex">
+                                            <div class="d-flex me-5 mx-3">
+                                                <ion-icon class="mt-1 me-3" name="person-outline"></ion-icon>
+                                                <p>jack Mengu</p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <ion-icon class="mt-1 me-3" name="timer-outline"></ion-icon>
+                                                <p>october 3th, 2018</p>
+                                            </div>
+                                        </div>
+                                        <div class="photos-4 ps-2 mb-5">
+                                            <div class="mb-2">
+                                                <image class="me-2" src="../src/img/Screenshot_1.jpg" style="width:48%;"></image>
+                                                <image  style="width:48%;" src="../src/img/Screenshot_2.jpg"></image>
+                                            </div>
+                                            <div class="mb-2">
+                                                <image class="me-2" style="width:48%;" src="../src/img/Screenshot_3.jpg"></image>
+                                                <image style="width:48%;" src="../src/img/Screenshot_4.jpg"></image>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div>
+                                                <image class="photo-in-table mx-3" src="../src/img/Dmytro Shurov.jpg"></image>
+                                            </div>
+                                            <div style="font-family: ubuntu-medium, sans-serif; font-size: small;">
+                                                <p class="d-flex mb-0">School Website - Authentication Module.</p>
+                                                <p style="font-size: 10px;">It is a long established fact that a reader will be distracted by the readable content of page.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--*******************************************Project Status*******************************************-->
+                        <div class="row">
+                            <div class="col-11 grid-margin streched-card mx-3" style="width:97%;">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title mb-3 mx-3">Project Status</h4>
+                                        <table class="table align-middle" style="font-family: ubuntu-medium, sans-serif; font-size: small;">
+                                            <thead>
+                                                <tr>
+                                                    <th><b>#</b></th>
+                                                    <th><b>Name</b></th>
+                                                    <th><b>Due Date</b></th>
+                                                    <th><b>Progress</b></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>1</th>
+                                                    <th>Herman Beck</th>
+                                                    <th>May 15, 2015</th>
+                                                    <th>
+                                                        <div class="progress">
+                                                            <div class="progress-bar bg-gradient-success" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <th>2</th>
+                                                    <th>Messsy Adam</th>
+                                                    <th>Jul 01, 2015</th>
+                                                    <th>
+                                                        <div class="progress">
+                                                            <div class="progress-bar bg-gradient-warning" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <th>3</th>
+                                                    <th>John Richard</th>
+                                                    <th>Apr 12, 2015</th>
+                                                    <th>
+                                                        <div class="progress">
+                                                            <div class="progress-bar bg-gradient-primary" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <th>4</th>
+                                                    <th>Ashton Coui</th>
+                                                    <th>May 15, 2015</th>
+                                                    <th>
+                                                        <div class="progress">
+                                                            <div class="progress-bar bg-gradient-danger" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <th>5</th>
+                                                    <th>Daniel Russe</th>
+                                                    <th>May 03, 2015</th>
+                                                    <th>
+                                                        <div class="progress">
+                                                            <div class="progress-bar bg-gradient-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--************************************************Footer************************************************-->
+                        <footer class="footer">
+                            <div class="d-flex justify-content-between mb-5">
+                                <span class="text-muted">
+                                    Copyright © 2017 
+                                    <a href="#" target="_blank">BootstrapDash</a>
+                                    . All rights reserved.
+                                </span>
+                                <span class="d-flex mt-1">
+                                    Hand-crafted & made with
+                                    <ion-icon class="text-danger d-flex mt-1" name="heart-outline"></ion-icon>
+                                </span>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+            
+    </body>
+</html>
