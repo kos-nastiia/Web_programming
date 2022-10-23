@@ -9,10 +9,14 @@
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
             <link rel="stylesheet" href="../dist/css/styles.min.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.js" integrity="sha512-d6nObkPJgV791iTGuBoVC9Aa2iecqzJRE0Jiqvk85BhLHAPhWqkuBiQb1xz2jvuHNqHLYoN3ymPfpiB1o+Zgpw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
             <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
     </head>
 
     <body>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         <!--*******************************************************HEADER*******************************************************-->
             <div class="row">
                 <div class="col-12 d-flex align-items-stretch" id="header">
@@ -33,14 +37,17 @@
                         </div>
                         <div class="d-flex">
                             <div>
-                                <image class="photo-in-table me-3" src="../src/img/Sergiy Zhadan.jpg">
+                                <image class="photo-in-table" src="../src/img/Sergiy Zhadan.jpg">
                             </div>
-                            <p class="name mt-1">David Grey. H</з>
-                            <a href="#">
-                                <span class="icon_photo">
-                                    <ion-icon class="text-muted" name="chevron-down-outline"></ion-icon>
-                                </span>   
-                            </a>
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    David Grey. H
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Change profile</a></li>
+                                    <li><a class="dropdown-item" href="#">Log out</a></li>
+                                </ul>
+                            </div>
                             <div class="top_icons">
                                 <ul class="d-flex">
                                     <li class="list">
@@ -93,12 +100,14 @@
                     <div class="col-2 colum_2" id="sidebar">
                         <!--Header of sidebar-->
                         <div class="d-flex justify-content-between">
-                            <div>
+                            <div class="d-flex ms-3">
                                 <div id="second_profile_container">
                                     <image style="width: 50px; height: 50px; border-radius: 100%;" src="../src/img/Sergiy Zhadan.jpg">
                                 </div>
-                                <h2 class="second_name">David Grey. H</h2>
-                                <p class="project_manager">Project Manager</p>
+                                <div>
+                                    <p class="second_name ms-2 mb-1">David Grey. H</p>
+                                    <p class="project_manager ms-2">Project Manager</p>
+                                </div>
                             </div>
                             <div>
                                 <span class="check">
@@ -146,14 +155,25 @@
                                     <ion-icon class="arrow-icon me-0" name="apps-outline"></ion-icon>
                                 </a>
                             </li>
-                            <li class="align-items-center nav-item li_conteiner">
-                                <a href="#" class="left-menu-link">
-                                    <span class="left-menu-text">Sample Pages</span>
-                                    <div class="arrow-icon me-0">
-                                        <ion-icon name="chevron-back-outline"></ion-icon>
-                                        <ion-icon name="add-circle-outline"></ion-icon>
+                            <li class="align-items-center nav-item li_conteiner accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <span class="left-menu-text">Sample Pages</span>
+                                            <div class="arrow-icon me-0 d-flex justify-content-end">
+                                                <ion-icon name="chevron-back-outline"></ion-icon>
+                                                <ion-icon name="add-circle-outline"></ion-icon>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body d-flex flex-column ms-3">
+                                            <a class="accordion-pages" href="#">first page</a>
+                                            <a class="accordion-pages" href="#">second page</a>
+                                            <a class="accordion-pages" href="#">third page</a>
+                                        </div>
                                     </div>
-                                </a>
+                                </div>
                             </li>
                         </ul>
                         <div class="pro_head d-flex align-items-center nav-item">Projects</div>
@@ -163,11 +183,11 @@
                         </div>
                         <hr style="height:2px; width:100%; border-width:0; color:grey; background-color:grey">
                         <div class="d-flex align-items-center nav-item category">Categories</div>
-                        <div class="form-check">
+                        <div class="form-check ms-3">
                             <input class="form-check-input radio_but_1" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                             <label class="form-check-label " for="flexRadioDefault1">Frends</label>
                         </div>
-                        <div class="form-check">
+                        <div class="form-check ms-3">
                             <input class="form-check-input radio_but_2" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                             <label class="form-check-label" for="flexRadioDefault1">Pro</label>
                         </div>
@@ -195,7 +215,7 @@
                                 <div class="strech-card">
                                     <div class="card bg-gradient-danger card-img-holder text-white">
                                         <div class="card-body">
-                                            <img class="card-img-absolute">
+                                            <img class="card-img-absolute" src="https://www.bootstrapdash.com/demo/purple/jquery/template/assets/images/dashboard/circle.svg">
                                             <h4 class="font-weight-normal mb-3 d-flex justify-content-between">
                                                 Weekly Sales
                                                 <ion-icon name="trending-up-outline"></ion-icon>
@@ -208,7 +228,7 @@
                                 <div class=" strech-card">
                                     <div class="card bg-gradient-info card-img-holder text-white">
                                         <div class="card-body">
-                                            <img class="card-img-absolute">
+                                            <img class="card-img-absolute" src="https://www.bootstrapdash.com/demo/purple/jquery/template/assets/images/dashboard/circle.svg">
                                             <h4 class="font-weight-normal mb-3 d-flex justify-content-between">
                                                 Weekly Orders
                                                 <ion-icon name="bookmark-outline"></ion-icon>
@@ -221,7 +241,7 @@
                                 <div class="strech-card">
                                     <div class="card bg-gradient-success card-img-holder text-white">
                                         <div class="card-body">
-                                            <img class="card-img-absolute">
+                                            <img class="card-img-absolute" src="https://www.bootstrapdash.com/demo/purple/jquery/template/assets/images/dashboard/circle.svg">
                                             <h4 class="font-weight-normal mb-3 d-flex justify-content-between">
                                                 Visitors Online
                                                 <ion-icon name="diamond-outline"></ion-iconion-icon>
@@ -241,15 +261,54 @@
                                         <div class="card-body">
                                             <div class="clearfix">
                                                 <h4 class="card-title float-left">Visit & Sales Statistics</h4>
+                                                <div id="visit-sale-chart-legend" class="rounded-legend legend-horizontal legend-top-right float-right">
+                                                    <ul class="d-flex text-muted mt-1" style="list-style: none; font-size: 12px;">
+                                                        <li class="mx-3">
+                                                            <span class="legend-dots" style="background:linear-gradient(to right, rgba(218, 140, 255, 1), rgba(154, 85, 255, 1))"></span>
+                                                            CHN
+                                                        </li>
+                                                        <li class="mx-3">
+                                                            <span class="legend-dots" style="background:linear-gradient(to right, rgba(255, 191, 150, 1), rgba(254, 112, 150, 1))"></span>
+                                                            USA
+                                                        </li>
+                                                        <li class="mx-3">
+                                                            <span class="legend-dots" style="background:linear-gradient(to right, rgba(54, 215, 232, 1), rgba(177, 148, 250, 1))"></span>
+                                                            UK
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </div>
+                                            <canvas></canvas>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-5 stretch-card" style="width:39%;">
                                     <div class="card">
                                         <div class="card-body">
-                                            <div class="clearfix">
-                                                <h4 class="card-title float-left">Traffic Source</h4>
+                                            <h4 class="card-title float-left">Traffic Source</h4>
+                                            <div class="any_container">
+                                                <div class="chart-container d-flex justify-content-center my-3" style="position: relative; height: 164px; width: 164px;">
+                                                    <canvas id="myChart" class="chartjs-render-monitor"></canvas>
+                                                </div>
+                                            </div>
+                                            <div id="traffic-chart-legend" class="rounded-legend legend-vertical legend-bottom-left pt-4">
+                                                <ul class="text-muted" style="list-style: none; font-size: 15px;">
+                                                    <li>
+                                                        <span class="legend-dots" style="background:linear-gradient(to right, rgba(54, 215, 232, 1), rgba(177, 148, 250, 1))"></span>
+                                                        Search Engines
+                                                        <span class="float-right">85.7%</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="legend-dots" style="background:linear-gradient(to right, rgba(6, 185, 157, 1), rgba(132, 217, 210, 1))"></span>
+                                                        Direct Click
+                                                        <span class="float-right">85.7%</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="legend-dots" style="background:linear-gradient(to right, rgba(255, 191, 150, 1), rgba(254, 112, 150, 1))"></span>
+                                                        Bookmarks Click
+                                                        <span class="float-right">14.9</span>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -436,5 +495,12 @@
                 </div>
             </div>
             
+
+            
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> 
+        <script src="../dist/js/scripts.min.js"></script>
     </body>
 </html>
