@@ -160,13 +160,13 @@
                                     <h2 class="accordion-header" id="headingOne">
                                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                             <span class="left-menu-text">Sample Pages</span>
-                                            <div class="arrow-icon me-0 d-flex justify-content-end">
+                                            <!--<div class="arrow-icon me-0 d-flex justify-content-end">
                                                 <ion-icon name="chevron-back-outline"></ion-icon>
                                                 <ion-icon name="add-circle-outline"></ion-icon>
-                                            </div>
+                                            </div>-->
                                         </button>
                                     </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                         <div class="accordion-body d-flex flex-column ms-3">
                                             <a class="accordion-pages" href="#">first page</a>
                                             <a class="accordion-pages" href="#">second page</a>
@@ -278,7 +278,11 @@
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <canvas></canvas>
+                                            <div class="any_container">
+                                                <div class="chart-container d-flex justify-content-center my-3" style="position: relative; height: 253px; width: 507px;">
+                                                    <canvas id="myChart1" class="chartjs-render-monitor"></canvas>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -288,7 +292,7 @@
                                             <h4 class="card-title float-left">Traffic Source</h4>
                                             <div class="any_container">
                                                 <div class="chart-container d-flex justify-content-center my-3" style="position: relative; height: 164px; width: 164px;">
-                                                    <canvas id="myChart" class="chartjs-render-monitor"></canvas>
+                                                    <canvas id="myChart2" class="chartjs-render-monitor"></canvas>
                                                 </div>
                                             </div>
                                             <div id="traffic-chart-legend" class="rounded-legend legend-vertical legend-bottom-left pt-4">
